@@ -61,11 +61,10 @@
   <main class="main-stage">
 
     <!-- ==========================================
-         1. INICIO CON BOTONES FUNCIONALES Y PARALLAX 3D
+         1. INICIO CON BOTONES FUNCIONALES, SALA HABBO Y PARALLAX 3D
          ========================================== -->
     <section class="tab-panel panel-inicio">
       <div class="parallax-scene-wrapper">
-        <!-- Sensores de inclinación en las esquinas -->
         <div class="sensor s-tl" aria-hidden="true"></div>
         <div class="sensor s-tr" aria-hidden="true"></div>
         <div class="sensor s-bl" aria-hidden="true"></div>
@@ -81,7 +80,6 @@
               <strong>Compromiso de Marca:</strong> Las dinámicas de captación externa se informan dentro de las oleadas en el hotel; reservamos los nombres de otros hoteles por respeto y derechos de autor.
             </div>
 
-            <!-- BOTONES CORREGIDOS Y 100% CLICABLES -->
             <div class="cta-group">
               <label for="nav-calendario" class="unique-btn btn-gold-action"><span>Explorar Calendario Anual</span></label>
               <a href="#discord-help" class="unique-btn btn-frost-action"><span>Contactar en Discord</span></a>
@@ -89,10 +87,12 @@
           </div>
 
           <div class="hero-avatar-showcase">
-            <div class="ice-pedestal">
-              <img src="https://www.habbo.es/habbo-imaging/avatarimage?user=Habbo&action=std&direction=2&head_direction=2&gesture=sml&size=l" alt="Avatar de Habbi.es" class="habbo-hd-avatar">
+            <div class="ice-pedestal room-showcase-frame">
+              <!-- CAMBIA ESTE SRC POR LA IMAGEN DE TU SALA DE HABBO (ej. sala-principal.png) -->
+              <img src="https://images.habbo.com/web_images/habbo-web-articles/lpromo_xmas20_gen.png" alt="Sala temática de Habbo en Habbi.es" class="habbo-room-banner">
+              <img src="https://www.habbo.es/habbo-imaging/avatarimage?user=zLorenso&action=std&direction=2&head_direction=2&gesture=sml&size=l" alt="Avatar de zLorenso en Habbi.es" class="habbo-hd-avatar">
             </div>
-            <span class="avatar-caption">Marketing Oficial Habbi.es</span>
+            <span class="avatar-caption">Marketing Oficial Habbi.es &bull; zLorenso</span>
           </div>
         </div>
       </div>
@@ -316,44 +316,109 @@
     </section>
 
     <!-- ==========================================
-         3. PUBLICIDADES RECIENTES (24 TARJETAS FLIP 3D)
+         3. PUBLICIDADES RECIENTES (SOLO 5 TARJETAS EDITABLES)
          ========================================== -->
     <section class="tab-panel panel-publicidades">
       <div class="section-heading">
-        <h2>Publicidades Recientes (24 Campañas)</h2>
-        <p>Pasa el cursor sobre cualquier tarjeta para voltearla y ver la fecha, modalidad de oleada y detalles de la publicidad.</p>
+        <h2>Publicidades Recientes (5 Destacadas)</h2>
+        <p>Pasa el cursor sobre cada tarjeta para voltearla. Puedes editar fácilmente las imágenes, fechas y descripciones en tu HTML.</p>
       </div>
 
-      <div class="gallery-5k-grid">
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g1"><span class="cam-tag">Publicidad #01</span><h4>Gran Gala Navideña</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Gran Gala Navideña</h4><p><strong>Fecha:</strong> 24 Dic 2026</p><p>Convocatoria masiva en sala central con gran asistencia.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g2"><span class="cam-tag">Publicidad #02</span><h4>Torneo de Invierno</h4></div><div class="flip-back"><span class="type-pill normal">Oleada Normal</span><h4>Torneo de Invierno</h4><p><strong>Fecha:</strong> 19 Dic 2026</p><p>Llenado constante para rondas clasificatorias del hotel.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g3"><span class="cam-tag">Publicidad #03</span><h4>Palacio de Hielo</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Palacio de Hielo</h4><p><strong>Fecha:</strong> 12 Dic 2026</p><p>Apertura temática invernal con alta participación.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g4"><span class="cam-tag">Publicidad #04</span><h4>Encendido de Luces</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Encendido de Luces</h4><p><strong>Fecha:</strong> 28 Nov 2026</p><p>Inicio de temporada festiva en Habbi.es.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g5"><span class="cam-tag">Publicidad #05</span><h4>Noche de Dados VIP</h4></div><div class="flip-back"><span class="type-pill normal">Oleada Normal</span><h4>Noche de Dados VIP</h4><p><strong>Fecha:</strong> 19 Nov 2026</p><p>Difusión dirigida a salas de juegos y dinámicas.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g6"><span class="cam-tag">Publicidad #06</span><h4>Desfile Invernal</h4></div><div class="flip-back"><span class="type-pill normal">Oleada Normal</span><h4>Desfile Invernal</h4><p><strong>Fecha:</strong> 07 Nov 2026</p><p>Convocatoria de looks y público en pasarela.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g7"><span class="cam-tag">Publicidad #07</span><h4>Especial Octubre</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Especial Octubre</h4><p><strong>Fecha:</strong> 31 Oct 2026</p><p>Evento de cierre de mes con sala llena.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g8"><span class="cam-tag">Publicidad #08</span><h4>Fiesta de Disfraces</h4></div><div class="flip-back"><span class="type-pill normal">Oleada Normal</span><h4>Fiesta de Disfraces</h4><p><strong>Fecha:</strong> 03 Oct 2026</p><p>Oleada vespertina de atracción de usuarios.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g9"><span class="cam-tag">Publicidad #09</span><h4>Encuentro Comunitario</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Encuentro Comunitario</h4><p><strong>Fecha:</strong> 19 Sep 2026</p><p>Reunión especial con actividades grupales.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g10"><span class="cam-tag">Publicidad #10</span><h4>Tarde de Trivia</h4></div><div class="flip-back"><span class="type-pill normal">Oleada Normal</span><h4>Tarde de Trivia</h4><p><strong>Fecha:</strong> 12 Sep 2026</p><p>Llenado ágil para preguntas y premios rápidos.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g11"><span class="cam-tag">Publicidad #11</span><h4>Festival de Agosto</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Festival de Agosto</h4><p><strong>Fecha:</strong> 15 Ago 2026</p><p>Gran convocatoria veraniega en salas principales.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g12"><span class="cam-tag">Publicidad #12</span><h4>Reto de Sillas</h4></div><div class="flip-back"><span class="type-pill normal">Oleada Normal</span><h4>Reto de Sillas</h4><p><strong>Fecha:</strong> 01 Ago 2026</p><p>Rondas seguidas con buen ritmo de ingreso.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g13"><span class="cam-tag">Publicidad #13</span><h4>Torneo de Clanes</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Torneo de Clanes</h4><p><strong>Fecha:</strong> 18 Jul 2026</p><p>Oleada de alto impacto para competencia grupal.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g14"><span class="cam-tag">Publicidad #14</span><h4>Piscina VIP</h4></div><div class="flip-back"><span class="type-pill normal">Oleada Normal</span><h4>Piscina VIP</h4><p><strong>Fecha:</strong> 11 Jul 2026</p><p>Promoción en sala recreativa del hotel.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g15"><span class="cam-tag">Publicidad #15</span><h4>Gala de Junio</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Gala de Junio</h4><p><strong>Fecha:</strong> 20 Jun 2026</p><p>Recepción masiva de nuevos jugadores.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g16"><span class="cam-tag">Publicidad #16</span><h4>Cafetería Central</h4></div><div class="flip-back"><span class="type-pill normal">Oleada Normal</span><h4>Cafetería Central</h4><p><strong>Fecha:</strong> 13 Jun 2026</p><p>Punto de encuentro activado con difusión regular.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g17"><span class="cam-tag">Publicidad #17</span><h4>Cierre de Mayo</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Cierre de Mayo</h4><p><strong>Fecha:</strong> 30 May 2026</p><p>Oleada de fin de mes con sorteo especial.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g18"><span class="cam-tag">Publicidad #18</span><h4>Aniversario Marketing</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Aniversario Marketing</h4><p><strong>Fecha:</strong> 01 May 2026</p><p>Jornada oficial celebrando el crecimiento del área.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g19"><span class="cam-tag">Publicidad #19</span><h4>Especial de Abril</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Especial de Abril</h4><p><strong>Fecha:</strong> 18 Abr 2026</p><p>Apertura coordinada de salas conectadas.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g20"><span class="cam-tag">Publicidad #20</span><h4>Laberinto de Marzo</h4></div><div class="flip-back"><span class="type-pill normal">Oleada Normal</span><h4>Laberinto de Marzo</h4><p><strong>Fecha:</strong> 21 Mar 2026</p><p>Flujo continuo de visitantes durante la tarde.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g21"><span class="cam-tag">Publicidad #21</span><h4>Apertura de Primavera</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Apertura de Primavera</h4><p><strong>Fecha:</strong> 14 Mar 2026</p><p>Gran convocatoria en la sala de bienvenida.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g22"><span class="cam-tag">Publicidad #22</span><h4>Gala de Febrero</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Gala de Febrero</h4><p><strong>Fecha:</strong> 14 Feb 2026</p><p>Evento especial con gran afluencia de comunidad.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g23"><span class="cam-tag">Publicidad #23</span><h4>Especial de Enero</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Especial de Enero</h4><p><strong>Fecha:</strong> 06 Ene 2026</p><p>Primera gran oleada masiva del calendario anual.</p></div></div></div>
-        <div class="flip-box"><div class="flip-card-inner"><div class="flip-front bg-g24"><span class="cam-tag">Publicidad #24</span><h4>Gran Cierre Anual</h4></div><div class="flip-back"><span class="type-pill masiva">Oleada Masiva</span><h4>Gran Cierre Anual</h4><p><strong>Fecha:</strong> 31 Dic 2026</p><p>Cierre festivo del año junto a toda la comunidad.</p></div></div></div>
+      <div class="gallery-5-grid">
+        <!-- PUBLICIDAD 1 -->
+        <div class="flip-box">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <!-- CAMBIA LA URL DE ESTA IMAGEN DE SALA -->
+              <img src="https://images.habbo.com/web_images/habbo-web-articles/lpromo_xmas20_gen.png" alt="Sala de Publicidad 1" class="room-photo">
+              <span class="cam-tag">Sala #01</span>
+              <h4>Gran Gala Navideña</h4>
+            </div>
+            <div class="flip-back">
+              <span class="type-pill masiva">Oleada Masiva</span>
+              <h4>Gran Gala Navideña</h4>
+              <p><strong>Fecha:</strong> 24 Dic 2026</p>
+              <p>Llenado masivo en la sala principal navideña de Habbi.es.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PUBLICIDAD 2 -->
+        <div class="flip-box">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <!-- CAMBIA LA URL DE ESTA IMAGEN DE SALA -->
+              <img src="https://images.habbo.com/web_images/habbo-web-articles/lpromo_winter21_gen.png" alt="Sala de Publicidad 2" class="room-photo">
+              <span class="cam-tag">Sala #02</span>
+              <h4>Palacio de Hielo</h4>
+            </div>
+            <div class="flip-back">
+              <span class="type-pill masiva">Oleada Masiva</span>
+              <h4>Palacio de Hielo</h4>
+              <p><strong>Fecha:</strong> 12 Dic 2026</p>
+              <p>Convocatoria invernal con gran asistencia en salas temáticas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PUBLICIDAD 3 -->
+        <div class="flip-box">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <!-- CAMBIA LA URL DE ESTA IMAGEN DE SALA -->
+              <img src="https://images.habbo.com/web_images/habbo-web-articles/lpromo_habboween20_gen.png" alt="Sala de Publicidad 3" class="room-photo">
+              <span class="cam-tag">Sala #03</span>
+              <h4>Evento Especial de Salas</h4>
+            </div>
+            <div class="flip-back">
+              <span class="type-pill normal">Oleada Normal</span>
+              <h4>Evento Especial de Salas</h4>
+              <p><strong>Fecha:</strong> 19 Nov 2026</p>
+              <p>Difusión constante para mantener activa la sala de juegos.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PUBLICIDAD 4 -->
+        <div class="flip-box">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <!-- CAMBIA LA URL DE ESTA IMAGEN DE SALA -->
+              <img src="https://images.habbo.com/web_images/habbo-web-articles/lpromo_summer21_gen.png" alt="Sala de Publicidad 4" class="room-photo">
+              <span class="cam-tag">Sala #04</span>
+              <h4>Torneo de Comunidad</h4>
+            </div>
+            <div class="flip-back">
+              <span class="type-pill masiva">Oleada Masiva</span>
+              <h4>Torneo de Comunidad</h4>
+              <p><strong>Fecha:</strong> 15 Ago 2026</p>
+              <p>Oleada coordinada para competencias y actividades del hotel.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PUBLICIDAD 5 -->
+        <div class="flip-box">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <!-- CAMBIA LA URL DE ESTA IMAGEN DE SALA -->
+              <img src="https://images.habbo.com/web_images/habbo-web-articles/lpromo_xmas19_gen.png" alt="Sala de Publicidad 5" class="room-photo">
+              <span class="cam-tag">Sala #05</span>
+              <h4>Recepción de Nuevos Habbis</h4>
+            </div>
+            <div class="flip-back">
+              <span class="type-pill normal">Oleada Normal</span>
+              <h4>Recepción de Nuevos Habbis</h4>
+              <p><strong>Fecha:</strong> 05 Dic 2026</p>
+              <p>Bienvenida y captación continua de usuarios hacia Habbi.es.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ==========================================
-         4. NORMATIVA & ENCARGADO DEL DEPARTAMENTO
+         4. NORMATIVA & ENCARGADO (zLorenso)
          ========================================== -->
     <section class="tab-panel panel-normativa">
       <div class="section-heading">
@@ -363,14 +428,17 @@
 
       <div class="management-layout">
         <div class="director-card">
-          <div class="director-badge">&#128081; Dirección del Departamento</div>
-          <div class="director-avatar-ring">
-            <img src="https://www.habbo.es/habbo-imaging/avatarimage?user=DirectorHabbi&action=std&direction=2&head_direction=3&gesture=sml&size=l" alt="Encargado del Departamento">
+          <div class="director-badge">&#128081; Encargado del Departamento</div>
+          <div class="director-room-banner">
+            <img src="https://images.habbo.com/web_images/habbo-web-articles/lpromo_xmas20_gen.png" alt="Sala de Dirección Habbi.es">
           </div>
-          <h3>Encargado de Marketing</h3>
-          <span class="director-role">Líder Oficial de Publicidad &amp; EDPs</span>
+          <div class="director-avatar-ring">
+            <img src="https://www.habbo.es/habbo-imaging/avatarimage?user=zLorenso&action=std&direction=2&head_direction=3&gesture=sml&size=l" alt="Avatar de zLorenso">
+          </div>
+          <h3>zLorenso</h3>
+          <span class="director-role">Encargado Oficial de Publicidad &amp; EDPs</span>
           <p>Encargado de coordinar las estrategias de captación, supervisar el cumplimiento de las normas y guiar al equipo de Habbi.es.</p>
-          <a href="#discord-help" class="unique-btn btn-gold-action" style="width: 100%; margin-top: 1rem;"><span>Contactar Dirección</span></a>
+          <a href="#discord-help" class="unique-btn btn-gold-action" style="width: 100%; margin-top: 1rem;"><span>Contactar a zLorenso</span></a>
         </div>
 
         <div class="rules-list-box">
@@ -425,13 +493,13 @@
       <a href="#" class="close-modal" aria-label="Cerrar">&times;</a>
       <div class="modal-h-logo">H</div>
       <h3>Ayuda y Contacto Oficial</h3>
-      <p>Comunícate con el Departamento de Marketing de <strong>Habbi.es</strong> a través de nuestro servidor de Discord.</p>
+      <p>Comunícate con <strong>zLorenso</strong> y el Departamento de Marketing de <strong>Habbi.es</strong> a través de Discord.</p>
       <a href="https://discord.gg" target="_blank" rel="noopener noreferrer" class="unique-btn btn-discord-official"><span>Ir al Discord Oficial</span></a>
     </div>
   </div>
 
   <footer class="frost-footer">
-    <p>&copy; 2026 Habbi.es &mdash; Departamento Oficial de Publicidad &amp; Marketing. Todos los derechos reservados.</p>
+    <p>&copy; 2026 Habbi.es &mdash; Departamento Oficial de Publicidad &amp; Marketing (Encargado: zLorenso). Todos los derechos reservados.</p>
   </footer>
 
 </body>
