@@ -35,6 +35,8 @@
   <input type="radio" name="habbi-nav" id="nav-inicio" checked>
   <input type="radio" name="habbi-nav" id="nav-calendario">
   <input type="radio" name="habbi-nav" id="nav-publicidades">
+  <input type="radio" name="habbi-nav" id="nav-premios">
+  <input type="radio" name="habbi-nav" id="nav-dinamica">
   <input type="radio" name="habbi-nav" id="nav-normativa">
 
   <!-- CABECERA CRISTALINA -->
@@ -52,6 +54,8 @@
         <label for="nav-inicio" class="unique-btn"><span>Inicio</span></label>
         <label for="nav-calendario" class="unique-btn"><span>Calendario</span></label>
         <label for="nav-publicidades" class="unique-btn"><span>Galeria Publicitaria</span></label>
+        <label for="nav-premios" class="unique-btn"><span>Premios</span></label>
+        <label for="nav-dinamica" class="unique-btn"><span>Dinámica</span></label>
         <label for="nav-normativa" class="unique-btn"><span>Normativa</span></label>
       </nav>
     </div>
@@ -348,7 +352,7 @@
           <div class="flip-card-inner">
             <div class="flip-front">
               <!-- CAMBIA LA URL DE ESTA IMAGEN DE SALA -->
-              <img src="https://cdn.habtium.com/album/7/40b46dff74ad.png">
+              <img src="https://cdn.habtium.com/album/7/40b46dff74ad.png" alt="Sala de Publicidad 2" class="room-photo">
               <span class="cam-tag">Sala #02</span>
               <h4>Palacio de Hielo</h4>
             </div>
@@ -402,7 +406,7 @@
           <div class="flip-card-inner">
             <div class="flip-front">
               <!-- CAMBIA LA URL DE ESTA IMAGEN DE SALA -->
-              <img src="https://images.habbotemplarios.com/2025/08/Habbo_25_Aniversario.png">
+              <img src="https://images.habbotemplarios.com/2025/08/Habbo_25_Aniversario.png" alt="Sala de Publicidad 5" class="room-photo">
               <span class="cam-tag">Sala #05</span>
               <h4>Recepción de Nuevos Habbis</h4>
             </div>
@@ -418,7 +422,108 @@
     </section>
 
     <!-- ==========================================
-         4. NORMATIVA & ENCARGADO (zLorenso)
+         4. SECCIÓN DE PREMIOS (ORO, PLATA Y BRONCE)
+         ========================================== -->
+    <section class="tab-panel panel-premios">
+      <div class="section-heading">
+        <h2>Cuadro de Honor y Premios Oficiales</h2>
+        <p>Reconocimiento a los mejores publicistas escogidos por su constancia y desempeño en Habbi.es.</p>
+      </div>
+
+      <div class="awards-3-grid">
+        <!-- PREMIO PLATA (2DO PUESTO) -->
+        <article class="award-card tier-silver">
+          <div class="award-medal-badge">&#129352; Premio Plata</div>
+          <div class="award-avatar-pedestal">
+            <!-- AVATAR OFICIAL DE HABBO.ES -->
+            <img src="https://www.habbo.es/habbo-imaging/avatarimage?user=Sefora&direction=2&head_direction=3&gesture=sml&size=l" alt="Avatar Escogido Premio Plata">
+          </div>
+          <span class="award-winner-name">Escogido: Sefora</span>
+          <h3>Pack Publicista de Plata</h3>
+          <div class="award-prize-tag">500 Créditos + Raro Exclusivo + Placa Plata</div>
+          <p>Otorgado por su destacada participación en oleadas diarias, puntualidad y apoyo constante en la captación de nuevos usuarios.</p>
+        </article>
+
+        <!-- PREMIO ORO (1ER PUESTO DESTACADO) -->
+        <article class="award-card tier-gold">
+          <div class="award-medal-badge">&#129351; Premio Oro</div>
+          <div class="award-avatar-pedestal">
+            <!-- AVATAR OFICIAL DE HABBO.ES -->
+            <img src="https://www.habbo.es/habbo-imaging/avatarimage?user=juancha23!!&direction=2&head_direction=3&gesture=sml&size=l" alt="Avatar Escogido Premio Oro">
+          </div>
+          <span class="award-winner-name">Escogido: juancha23!!</span>
+          <h3>Gran Galardón de Oro</h3>
+          <div class="award-prize-tag">1.000 Créditos + Mega Raro + Placa Oro VIP</div>
+          <p>Máximo reconocimiento mensual por liderar el ranking de captación, asistencia perfecta en oleadas masivas y compromiso ejemplar con el equipo.</p>
+        </article>
+
+        <!-- PREMIO BRONCE (3ER PUESTO) -->
+        <article class="award-card tier-bronze">
+          <div class="award-medal-badge">&#129353; Premio Bronce</div>
+          <div class="award-avatar-pedestal">
+            <!-- AVATAR OFICIAL DE HABBO.ES -->
+            <img src="https://www.habbo.es/habbo-imaging/avatarimage?user=javier2&direction=2&head_direction=3&gesture=sml&size=l" alt="Avatar Escogido Premio Bronce">
+          </div>
+          <span class="award-winner-name">Escogido: javier2</span>
+          <h3>Mérito Publicista de Bronce</h3>
+          <div class="award-prize-tag">250 Créditos + Furni Sorpresa + Placa Bronce</div>
+          <p>Reconocimiento al esfuerzo continuo, buena actitud dentro del hotel y cumplimiento efectivo en las jornadas de difusión.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         5. SECCIÓN DINÁMICA DE PUBLICIDAD (1 FOTO DE SALA + DESCRIPCIÓN)
+         ========================================== -->
+    <section class="tab-panel panel-dinamica">
+      <div class="section-heading">
+        <h2>Dinámica Oficial de Publicidad</h2>
+        <p>Conoce la metodología, el punto de encuentro y cómo se lleva a cabo cada jornada de captación.</p>
+      </div>
+
+      <div class="dynamics-showcase-card">
+        <div class="dynamics-room-box">
+          <!-- ÚNICA FOTO MOSTRANDO LA SALA DE PUBLICIDAD -->
+          <img src="https://images.habbo.com/web_images/habbo-web-articles/lpromo_xmas20_gen.png" alt="Sala Central de Operaciones y Publicidad Habbi.es" class="dynamics-single-photo">
+          <span class="dynamics-photo-caption">&#128205; Sala Oficial de Reunión y Salida de Oleadas &bull; Habbi.es</span>
+        </div>
+
+        <div class="dynamics-content">
+          <span class="frost-badge">&#9881; Protocolo de Ejecución</span>
+          <h3>¿Cómo se hace la publicidad y cómo se llevará a cabo?</h3>
+          <p>Nuestra dinámica está diseñada para maximizar la llegada de nuevos usuarios de forma organizada, segura y sincronizada entre todo el departamento de marketing.</p>
+
+          <div class="dynamics-steps">
+            <div class="dyn-step">
+              <span class="dyn-step-num">1</span>
+              <div>
+                <h4>Convocatoria en Sala Central</h4>
+                <p>10 minutos antes de cada oleada, el equipo se reúne en la sala oficial mostrada en pantalla para recibir las indicaciones del encargado y verificar asistencia.</p>
+              </div>
+            </div>
+
+            <div class="dyn-step">
+              <span class="dyn-step-num">2</span>
+              <div>
+                <h4>Asignación de Mensajes y Canales</h4>
+                <p>Se entregan los textos promocionales autorizados destacando los eventos, juegos y premios activos de <strong>Habbi.es</strong>, respetando siempre la normativa ética.</p>
+              </div>
+            </div>
+
+            <div class="dyn-step">
+              <span class="dyn-step-num">3</span>
+              <div>
+                <h4>Despliegue Sincronizado y Captura</h4>
+                <p>A la señal del coordinador, todos los publicistas inician la difusión simultánea durante 30 minutos y toman captura de pantalla como evidencia para sumar puntos hacia los premios Oro, Plata y Bronce.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         6. NORMATIVA & ENCARGADO (zLorenso)
          ========================================== -->
     <section class="tab-panel panel-normativa">
       <div class="section-heading">

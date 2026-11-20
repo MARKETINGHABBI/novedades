@@ -235,6 +235,8 @@ input[type="radio"] {
 #nav-inicio:checked ~ .glass-header label[for="nav-inicio"],
 #nav-calendario:checked ~ .glass-header label[for="nav-calendario"],
 #nav-publicidades:checked ~ .glass-header label[for="nav-publicidades"],
+#nav-premios:checked ~ .glass-header label[for="nav-premios"],
+#nav-dinamica:checked ~ .glass-header label[for="nav-dinamica"],
 #nav-normativa:checked ~ .glass-header label[for="nav-normativa"] {
   background: linear-gradient(135deg, var(--xmas-red), #9f1239);
   color: #ffffff;
@@ -294,6 +296,8 @@ input[type="radio"] {
 #nav-inicio:checked ~ .main-stage .panel-inicio,
 #nav-calendario:checked ~ .main-stage .panel-calendario,
 #nav-publicidades:checked ~ .main-stage .panel-publicidades,
+#nav-premios:checked ~ .main-stage .panel-premios,
+#nav-dinamica:checked ~ .main-stage .panel-dinamica,
 #nav-normativa:checked ~ .main-stage .panel-normativa {
   display: block;
 }
@@ -712,6 +716,247 @@ input[type="radio"] {
 .flip-back p { font-size: 0.74rem; color: var(--text-muted); line-height: 1.35; }
 
 /* ==========================================
+   SECCIÓN PREMIOS (ORO, PLATA Y BRONCE)
+   ========================================== */
+.awards-3-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.award-card {
+  background: var(--frost-panel);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--frost-border);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-6px);
+}
+
+.award-medal-badge {
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin-bottom: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.award-avatar-pedestal {
+  width: 120px;
+  height: 130px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.95rem;
+  background: radial-gradient(circle at 50% 45%, rgba(125, 211, 252, 0.22), rgba(15, 23, 42, 0.9));
+  border: 1px solid var(--frost-border);
+  overflow: hidden;
+}
+
+.award-avatar-pedestal img {
+  height: 122px;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.6));
+  animation: gentleHover 4s ease-in-out infinite;
+}
+
+.award-winner-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ice-blue);
+  margin-bottom: 0.35rem;
+}
+
+.award-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.65rem;
+}
+
+.award-prize-tag {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 10px;
+  margin-bottom: 0.95rem;
+  width: 100%;
+}
+
+.award-card p {
+  color: var(--text-muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+/* Estilos Oro */
+.tier-gold {
+  border: 1px solid var(--xmas-gold);
+  box-shadow: 0 15px 40px rgba(251, 191, 36, 0.18), inset 0 0 20px rgba(251, 191, 36, 0.08);
+}
+.tier-gold .award-medal-badge {
+  background: linear-gradient(135deg, #fde68a, var(--xmas-gold));
+  color: #090e1a;
+}
+.tier-gold .award-avatar-pedestal {
+  border-color: var(--xmas-gold);
+  background: radial-gradient(circle at 50% 45%, rgba(251, 191, 36, 0.28), rgba(15, 23, 42, 0.92));
+}
+.tier-gold h3 { color: var(--xmas-gold); }
+.tier-gold .award-prize-tag {
+  background: rgba(251, 191, 36, 0.16);
+  border: 1px solid rgba(251, 191, 36, 0.45);
+  color: #fde68a;
+}
+
+/* Estilos Plata */
+.tier-silver {
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 12px 32px rgba(203, 213, 225, 0.12);
+}
+.tier-silver .award-medal-badge {
+  background: linear-gradient(135deg, #f1f5f9, #94a3b8);
+  color: #090e1a;
+}
+.tier-silver .award-avatar-pedestal {
+  border-color: #cbd5e1;
+}
+.tier-silver h3 { color: #e2e8f0; }
+.tier-silver .award-prize-tag {
+  background: rgba(148, 163, 184, 0.16);
+  border: 1px solid rgba(203, 213, 225, 0.4);
+  color: #e2e8f0;
+}
+
+/* Estilos Bronce */
+.tier-bronze {
+  border: 1px solid #d97706;
+  box-shadow: 0 12px 32px rgba(217, 119, 6, 0.14);
+}
+.tier-bronze .award-medal-badge {
+  background: linear-gradient(135deg, #fdba74, #c2410c);
+  color: #fff;
+}
+.tier-bronze .award-avatar-pedestal {
+  border-color: #d97706;
+}
+.tier-bronze h3 { color: #fdba74; }
+.tier-bronze .award-prize-tag {
+  background: rgba(217, 119, 6, 0.16);
+  border: 1px solid rgba(251, 146, 60, 0.4);
+  color: #fed7aa;
+}
+
+/* ==========================================
+   SECCIÓN DINÁMICA DE PUBLICIDAD
+   ========================================== */
+.dynamics-showcase-card {
+  background: var(--frost-panel);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--frost-border);
+  border-radius: 20px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 2rem;
+  align-items: center;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+}
+
+.dynamics-room-box {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(125, 211, 252, 0.45);
+  background: rgba(15, 23, 42, 0.9);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.dynamics-single-photo {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  display: block;
+}
+
+.dynamics-photo-caption {
+  display: block;
+  padding: 0.75rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ice-blue);
+  background: rgba(9, 14, 26, 0.92);
+  border-top: 1px solid var(--frost-border);
+  text-align: center;
+}
+
+.dynamics-content h3 {
+  font-size: clamp(1.3rem, 2.5vw, 1.65rem);
+  margin: 0.85rem 0 0.65rem;
+  color: #fff;
+}
+
+.dynamics-content > p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin-bottom: 1.35rem;
+}
+
+.dynamics-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.dyn-step {
+  display: flex;
+  gap: 0.95rem;
+  align-items: flex-start;
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid var(--frost-border);
+  padding: 0.95rem 1.1rem;
+  border-radius: 12px;
+}
+
+.dyn-step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--xmas-gold), #d97706);
+  color: #090e1a;
+  font-weight: 800;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.dyn-step h4 {
+  font-size: 0.94rem;
+  color: var(--ice-blue);
+  margin-bottom: 0.2rem;
+}
+
+.dyn-step p {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* ==========================================
    NORMATIVA & ENCARGADO (zLorenso)
    ========================================== */
 .management-layout {
@@ -926,7 +1171,9 @@ input[type="radio"] {
 
 /* RESPONSIVE TABLET Y CELULAR (iOS / ANDROID) */
 @media (max-width: 900px) {
-  .management-layout { grid-template-columns: 1fr; }
+  .management-layout,
+  .dynamics-showcase-card { grid-template-columns: 1fr; }
+  .dynamics-single-photo { height: 230px; }
   .hero-ice-card {
     flex-direction: column;
     text-align: center;
